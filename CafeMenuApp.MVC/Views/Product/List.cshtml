@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Product List Page";
+}
+@model List<ListProductResponseDto>
+<div class="text-center">
+    <a href="/Product/Create"><h6>Ürün ekle.</h6></a>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Ürün Adı
+                </td>
+                <td>
+                    Fiyatı
+                </td>
+                <td>
+                    Görsel
+                </td>
+                <td>
+                    Kategori Adı
+                </td>
+                <td>
+                    Oluşturulma Tarihi
+                </td>
+                <td>
+                    Oluşturan
+                </td>
+                <td>
+                    Deleted
+                </td>
+                <td>
+                    İşlemler
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+                    <td>
+                        @item.ImagePath
+                    </td>
+                    <td>
+                        @item.CategoryName
+                    </td>
+                    <td>
+                        @item.CreatedDate
+                    </td>
+                    <td>
+                        @item.CreatorUserId
+                    </td>
+                    <td>
+                        <a @(item.IsDeleted ? "style=color:red" : "style=color:green")>@item.IsDeleted</a>
+                    </td>
+                    <td>
+                        <a href="/Product/Detail/@item.Id">Güncelle</a>
+                        <a href="/Product/Delete/@item.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

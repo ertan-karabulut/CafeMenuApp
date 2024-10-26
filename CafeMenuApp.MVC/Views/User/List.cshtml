@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "User List Page";
+}
+@model List<ListUserResponseDto>
+<div class="text-center">
+    <a href="/User/Create"><h6>Kullanıcı oluştur.</h6></a>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Kategori Adı
+                </td>
+                <td>
+                    Oluşturulma Tarihi
+                </td>
+                <td>
+                    Deleted
+                </td>
+                <td>
+                    İşlemler
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.SurName
+                    </td>
+                    <td>
+                        <a @(item.IsDeleted ? "style=color:red" : "style=color:green")>@item.IsDeleted</a>
+                    </td>
+                    <td>
+                        <a href="/User/Detail/@item.Id">Güncelle</a>
+                        <a href="/User/Delete/@item.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

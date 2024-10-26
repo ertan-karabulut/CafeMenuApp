@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Category List Page";
+}
+@model List<ListCategoryResponseDto>
+<div class="text-center">
+    <a href="/Category/Create"><h6>Kategori oluştur.</h6></a>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Kategori Adı
+                </td>
+                <td>
+                    Oluşturulma Tarihi
+                </td>
+                <td>
+                    Oluşturan
+                </td>
+                <td>
+                    Üst Kategori
+                </td>
+                <td>
+                    Deleted
+                </td>
+                <td>
+                    İşlemler
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.CreatedDate
+                    </td>
+                    <td>
+                        @item.CreatorUserId
+                    </td>
+                    <td>
+                        @item.ParentCategoryName
+                    </td>
+                    <td>
+                        <a @(item.IsDeleted ? "style=color:red" : "style=color:green")>@item.IsDeleted</a>
+                    </td>
+                    <td>
+                        <a href="/Category/Detail/@item.Id">Güncelle</a>
+                        <a href="/Category/Delete/@item.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

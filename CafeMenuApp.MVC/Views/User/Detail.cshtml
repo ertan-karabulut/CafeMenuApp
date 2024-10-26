@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "User Detail";
+}
+@model DetailUserDto
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <partial name="_UserDetailPartial" model="Model" />
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+    <a asp-action="List" class="btn btn-secondary">İptal</a>
+ </form>

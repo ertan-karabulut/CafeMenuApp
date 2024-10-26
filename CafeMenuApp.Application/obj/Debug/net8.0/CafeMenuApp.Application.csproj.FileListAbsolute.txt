@@ -1,0 +1,15 @@
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\bin\Debug\net8.0\CafeMenuApp.Application.deps.json
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\bin\Debug\net8.0\CafeMenuApp.Application.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\bin\Debug\net8.0\CafeMenuApp.Application.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.AssemblyInfoInputs.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.AssemblyInfo.cs
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.csproj.CoreCompileInputs.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\refint\CafeMenuApp.Application.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\ref\CafeMenuApp.Application.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\bin\Debug\net8.0\CafeMenuApp.Domain.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\bin\Debug\net8.0\CafeMenuApp.Domain.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.csproj.AssemblyReference.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Application\obj\Debug\net8.0\CafeMenuApp.Application.csproj.CopyComplete

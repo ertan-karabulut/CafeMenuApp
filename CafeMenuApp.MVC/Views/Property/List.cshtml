@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Property List Page";
+}
+@model List<ListPropertyResponseDto>
+<div class="text-center">
+    <a href="/Property/Create"><h6>Özellik ekle.</h6></a>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Özellik Adı
+                </td>
+                <td>
+                    Değeri
+                </td>
+                <td>
+                    İşlemler
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Key
+                    </td>
+                    <td>
+                        @item.Value
+                    </td>
+                    <td>
+                        <a href="/Property/Detail/@item.Id">Güncelle</a>
+                        <a href="/Property/Delete/@item.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,17 @@
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Infrastructure.deps.json
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Infrastructure.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Infrastructure.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.AssemblyInfoInputs.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.AssemblyInfo.cs
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\refint\CafeMenuApp.Infrastructure.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\ref\CafeMenuApp.Infrastructure.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Application.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Domain.dll
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Application.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\bin\Debug\net8.0\CafeMenuApp.Domain.pdb
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.csproj.AssemblyReference.cache
+C:\projeler\CafeMenuApp\CafeMenuApp.Infrastructure\obj\Debug\net8.0\CafeMenuApp.Infrastructure.csproj.CopyComplete

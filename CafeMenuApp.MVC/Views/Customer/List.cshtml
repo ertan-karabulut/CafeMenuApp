@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Product List Page";
+}
+@model List<CustomerProductListViewModel>
+<div class="text-center">
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Ürün Adı
+                </td>
+                <td>
+                    Fiyatı TL
+                </td>
+                <td>
+                    Fiyatı Usd
+                </td>
+                <td>
+                    Fiyatı Eur
+                </td>
+                <td>
+                    Görsel
+                </td>
+                <td>
+                    Kategori Adı
+                </td>
+                <td>
+                    Oluşturulma Tarihi
+                </td>
+                <td>
+                    Oluşturan
+                </td>
+                <td>
+                    Özellikler
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+                    <td>
+                        @item.PriceUsd.ToString("N")
+                    </td>
+                    <td>
+                        @item.PriceEur.ToString("N")
+                    </td>
+                    <td>
+                        @item.ImagePath
+                    </td>
+                    <td>
+                        @item.CategoryName
+                    </td>
+                    <td>
+                        @item.CreatedDate
+                    </td>
+                    <td>
+                        @item.CreatorUserId
+                    </td>
+                    <td>
+                        @{
+                            foreach (var property in item.Properties.OrderBy(x=>x.Key))
+                            {
+                                <a><span>@property.Key</span> <span>@property.Value</span></a>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Product Create";
+}
+@model DetailProductDto
+
+<form asp-action="Create" method="post">
+    <partial name="_ProductDetailPartial" model="Model" />
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="List" class="btn btn-secondary">İptal</a>
+ </form>

@@ -1,0 +1,45 @@
+﻿@model DetailProductDto
+
+<div class="form-group">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Price"></label>
+    <input asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="ImagePath"></label>
+    <input asp-for="ImagePath" class="form-control" />
+    <span asp-validation-for="ImagePath" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="CategoryId">Kategori</label>
+    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+        <option value="">Seçiniz</option>
+    </select>
+    <span asp-validation-for="CategoryId" class="text-danger"></span>
+</div>
+
+<h3>Ürün Özellikleri</h3>
+@for (int i = 0; i < Model.Properties.Count; i++)
+{
+    <div class="form-check">
+        <input type="checkbox"
+               asp-for="Properties[i].IsSelected"
+               class="form-check-input"
+               id="property_@Model.Properties[i].Id" />
+        <input type="hidden" asp-for="Properties[i].IsSelected" value="false" />
+        <input type="hidden" asp-for="Properties[i].Id" />
+        <input type="hidden" asp-for="Properties[i].Value" />
+        <input type="hidden" asp-for="Properties[i].Key" />
+        <label class="form-check-label" for="property_@Model.Properties[i].Id">
+            @Model.Properties[i].Key - @Model.Properties[i].Value
+        </label>
+    </div>
+}
